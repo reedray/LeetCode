@@ -20,6 +20,18 @@ func reverseList(head *ListNode) *ListNode {
 	return list
 
 }
+
+func reverseListIter(head *ListNode) *ListNode {
+
+	var prev *ListNode
+	for head != nil {
+		next := head.Next
+		head.Next = prev
+		prev = head
+		head = next
+	}
+	return prev
+}
 func main() {
 	c := ListNode{
 		Val:  3,
@@ -35,7 +47,7 @@ func main() {
 		Next: &b,
 	}
 
-	twoLists := reverseList(&a)
+	twoLists := reverseListIter(&a)
 	printList(twoLists)
 
 }
