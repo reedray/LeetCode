@@ -1,16 +1,12 @@
 package main
 
 import (
+	"LeetCode/models"
 	"fmt"
 	"time"
 )
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-func middleNode(head *ListNode) *ListNode {
+func middleNode(head *models.ListNode) *models.ListNode {
 	fast := head
 	slow := head
 	for fast.Next != nil {
@@ -27,24 +23,24 @@ func middleNode(head *ListNode) *ListNode {
 
 func main() {
 
-	x := ListNode{
+	x := models.ListNode{
 		Val:  5,
 		Next: nil,
 	}
-	h := ListNode{
+	h := models.ListNode{
 		Val:  4,
 		Next: &x,
 	}
-	c := ListNode{
+	c := models.ListNode{
 		Val:  3,
 		Next: &h,
 	}
-	b := ListNode{
+	b := models.ListNode{
 		Val:  2,
 		Next: &c,
 	}
 	//head1
-	a := ListNode{
+	a := models.ListNode{
 		Val:  1,
 		Next: &b,
 	}
