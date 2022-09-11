@@ -1,15 +1,11 @@
 package main
 
 import (
+	"LeetCode/models"
 	"fmt"
 )
 
-//type ListNode struct {
-//	Val  int
-//	Next *ListNode
-//}
-
-func reverseList(head *ListNode) *ListNode {
+func reverseList(head *models.ListNode) *models.ListNode {
 
 	if head == nil || head.Next == nil {
 		return head
@@ -21,9 +17,9 @@ func reverseList(head *ListNode) *ListNode {
 
 }
 
-func reverseListIter(head *ListNode) *ListNode {
+func reverseListIter(head *models.ListNode) *models.ListNode {
 
-	var prev *ListNode
+	var prev *models.ListNode
 	for head != nil {
 		next := head.Next
 		head.Next = prev
@@ -33,16 +29,16 @@ func reverseListIter(head *ListNode) *ListNode {
 	return prev
 }
 func main() {
-	c := ListNode{
+	c := models.ListNode{
 		Val:  3,
 		Next: nil,
 	}
-	b := ListNode{
+	b := models.ListNode{
 		Val:  2,
 		Next: &c,
 	}
 	//head1
-	a := ListNode{
+	a := models.ListNode{
 		Val:  1,
 		Next: &b,
 	}
@@ -52,7 +48,7 @@ func main() {
 
 }
 
-func printList(x *ListNode) {
+func printList(x *models.ListNode) {
 	for x != nil {
 		fmt.Println(x.Val)
 		x = x.Next
