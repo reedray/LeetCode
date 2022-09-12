@@ -1,13 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"LeetCode/models"
+)
 
-type Node struct {
-	Val      int
-	Children []*Node
-}
-
-func preorder(root *Node) []int {
+func preorder(root *models.Node) []int {
 
 	if root == nil {
 		return []int{}
@@ -23,8 +20,4 @@ func preorder(root *Node) []int {
 
 func main() {
 
-	x := []int{}
-	y := []int{1, 2, 3}
-	x = append(x, y...)
-	fmt.Println(x)
 }
