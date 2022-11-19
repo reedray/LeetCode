@@ -1,4 +1,4 @@
-package main
+package easy
 
 func firstBadVersion(n int) int {
 	left, mid := 0, 0

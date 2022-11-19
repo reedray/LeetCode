@@ -1,4 +1,4 @@
-package main
+package easy
 
 func longestPalindrome(s string) int {
 	hm := make(map[uint8]int)

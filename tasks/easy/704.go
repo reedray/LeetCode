@@ -1,4 +1,4 @@
-package main
+package easy
 
 func search(nums []int, target int) int {
 

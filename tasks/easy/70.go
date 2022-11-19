@@ -1,4 +1,4 @@
-package main
+package easy
 
 func climbStairs(n int) int {
 	stepL, stepR := 1, 2

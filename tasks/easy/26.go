@@ -1,4 +1,4 @@
-package main
+package easy
 
 func removeDuplicates(nums []int) int {
 	i := 0
@@ -13,6 +13,6 @@ func removeDuplicates(nums []int) int {
 }
 func main() {
 
-	x := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
+	x := []int{1, 1, 2, 2, 1, 3, 5}
 	removeDuplicates(x)
 }
