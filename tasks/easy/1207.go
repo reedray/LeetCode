@@ -1,4 +1,4 @@
-package main
+package easy
 
 func uniqueOccurrences(arr []int) bool {
 	hm := make(map[int]int)
